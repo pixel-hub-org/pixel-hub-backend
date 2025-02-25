@@ -1,0 +1,24 @@
+@baseUrl = http://localhost:3001
+
+
+# @name create_account
+POST {{baseUrl}}/accounts
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "email": "jane.doe@mailinator.com",
+  "password": "qwer1234",
+  "accessRoles": "LEADER"
+}
+
+###
+
+# @name authenticate
+POST {{baseUrl}}/sessions
+Content-Type: application/json
+
+{
+  "email": "jane.doe@mailinator.com",
+  "password": "qwer1234"
+}

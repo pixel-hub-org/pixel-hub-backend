@@ -4,6 +4,7 @@ import {
   Controller,
   Post,
   UsePipes,
+  HttpCode,
 } from '@nestjs/common'
 import { PrismaService } from 'src/prisma/prisma.service'
 import { hash } from 'bcryptjs'
@@ -25,6 +26,7 @@ type CreateAccountBodySchema = z.infer<typeof createAccountBodySchema>
 export class CreateAccountController {
   constructor(private prisma: PrismaService) {}
   @Post()
+  @HttpCode(201)
   @UsePipes(new ZodValidationPipe(createAccountBodySchema))
   async handle(@Body() body: CreateAccountBodySchema) {
     const { name, email, password, accessRoles } = body
