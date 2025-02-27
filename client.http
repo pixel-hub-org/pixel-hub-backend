@@ -1,5 +1,5 @@
 @baseUrl = http://localhost:3001
-
+@authToken = {{authenticate.response.body.access_token}}
 
 # @name create_account
 POST {{baseUrl}}/accounts
@@ -22,3 +22,10 @@ Content-Type: application/json
   "email": "jane.doe@mailinator.com",
   "password": "qwer1234"
 }
+
+###
+
+# @name create_game
+POST {{baseUrl}}/games
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
