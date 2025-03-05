@@ -19,7 +19,6 @@ model User {
   email       String      @unique
   password    String
   accessRoles AccessRoles @default(PLAYER) @map("access_roles")
-  Player      Player[]
   GameTeams   GameTeams[]
 
   createdAt  DateTime @default(now()) @map("created_at")
@@ -49,9 +48,6 @@ model Player {
   id   String      @id @default(uuid())
   role PlayerRoles @default(PLAYER)
 
-  user   User   @relation(fields: [userId], references: [id])
-  userId String
-
   game   Game   @relation(fields: [gameId], references: [id])
   gameId String
 
@@ -62,9 +58,9 @@ model Player {
 }
 
 model Team {
-  id       String @id @default(uuid())
-  logo_url String
-  name     String
+  id      String @id @default(uuid())
+  logoUrl String @map("logo_url")
+  name    String
 
   createdAt  DateTime @default(now()) @map("created_at")
   updated_at DateTime @default(now()) @map("updated_at")

@@ -1,15 +1,16 @@
 @baseUrl = http://localhost:3001
-@authToken = {{authenticate.response.body.access_token}}
+@authToken = eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0YTNmYjFjMC1iM2VhLTRlOWYtOWZjMC01NjdmMWM3ZWM3MjkiLCJpYXQiOjE3NDExNzgyMzZ9.HYn4j0aE8EEg3O6Z8PVOnlc6O-tYDRCvNOcj_kACM62YQIgCp6wv6z8aGxICeql8AhwgiP1YoyhhIG3AXDAYljMcP-zFCsj43fh-CGnTdBd5swEectNkxh6SoIJMw1HTe5tEob4kMAScdeRePQKmCZ1K31HtrZ16PuKYsFPQP_OKZ1OAvF_rsaA8u0_MzWF-eDZ8Hu4OIfDCJR48oZ04rACPhfMWWazASRCmxMjLRadVj1a3aunxOE-4E0OrxBX-NaKSzGXHOHgZqueaFoE2w2EEotlcowPu8MLZEa80OwxMAVIRhaArI7uZtTwB6NXIZ4VRPo2hkcieS5FFEaBBHA
 
 # @name create_account
 POST {{baseUrl}}/accounts
 Content-Type: application/json
+Accept: application/json
 
 {
-  "name": "Jane Doe",
-  "email": "jane.doe@mailinator.com",
+  "name": "Jessica Marques",
+  "email": "jessica.marques@mailinator.com",
   "password": "qwer1234",
-  "accessRoles": "LEADER"
+  "accessRoles": "SUPER_ADMIN"
 }
 
 ###
@@ -19,13 +20,18 @@ POST {{baseUrl}}/sessions
 Content-Type: application/json
 
 {
-  "email": "jane.doe@mailinator.com",
+  "email": "jessica.marques@mailinator.com",
   "password": "qwer1234"
 }
 
 ###
 
-# @name create_game
-POST {{baseUrl}}/games
+# @name create_team
+POST {{baseUrl}}/teams
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
+
+{
+  "name": "Pixel Hub Games",
+  "logoUrl": "teste.png"
+}
