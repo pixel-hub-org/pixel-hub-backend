@@ -7,6 +7,7 @@ import { AuthModule } from './auth/auth.module'
 import { AuthenticateController } from './controllers/authenticate.controller'
 import { CreateGamesController } from './controllers/create-game.controller'
 import { CreateTeamsController } from './controllers/create-team.controller'
+import { FetchGamesController } from './controllers/fetch-games.controller'
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { CreateTeamsController } from './controllers/create-team.controller'
     AuthenticateController,
     CreateGamesController,
     CreateTeamsController,
+    FetchGamesController,
   ],
   providers: [PrismaService],
 })

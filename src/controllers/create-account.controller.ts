@@ -6,9 +6,9 @@ import {
   UsePipes,
   HttpCode,
 } from '@nestjs/common'
-import { PrismaService } from 'src/prisma/prisma.service'
+import { PrismaService } from '@/prisma/prisma.service'
 import { hash } from 'bcryptjs'
-import { ZodValidationPipe } from 'src/pipes/zod-validation-pipe'
+import { ZodValidationPipe } from '@/pipes/zod-validation-pipe'
 import { z } from 'zod'
 
 const accessRoles = ['SUPER_ADMIN', 'GAME_ADMIN', 'LEADER', 'PLAYER'] as const

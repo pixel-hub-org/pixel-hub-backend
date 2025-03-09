@@ -28,12 +28,12 @@ model User {
 }
 
 model Game {
-  id             String   @id @default(uuid())
-  name           String
-  description    String
-  categories     String[]
-  image_url      String[]
-  pixel_hub_info Json
+  id           String   @id @default(uuid())
+  name         String
+  description  String
+  categories   String[]
+  imageUrl     String[] @map("imageUrl")
+  pixelHubInfo Json     @map("pixel_hub_info")
 
   Player    Player[]
   GameTeams GameTeams[]
