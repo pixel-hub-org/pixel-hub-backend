@@ -35,3 +35,25 @@ Authorization: Bearer {{authToken}}
   "name": "Pixel Hub Games",
   "logoUrl": "teste.png"
 }
+
+###
+
+# @name create_game
+POST  {{baseUrl}}/games
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "name": "Metaphor",
+  "description": "Baum demais mas caro",
+  "categories": ["RPG", "Ação"],
+  "imageUrl": ["teste.png", "teste_2.png"],
+  "pixelHubInfo": {"moto": "nao"}
+}
+
+###
+
+# @name fetch-all-games
+GET {{baseUrl}}/games?page=2
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
