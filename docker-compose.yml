@@ -1,6 +1,21 @@
 version: '3.8'
 
 services:
+  app:
+    container_name: pixel_hub_app
+    build: .
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://postgres:docker@postgres:5432/pixel_hub_db
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/prisma/generated
+    command: bash -c "npx prisma generate && npm run start"
+
   postgres:
     container_name: pixel_hub_pg
     image: postgres
