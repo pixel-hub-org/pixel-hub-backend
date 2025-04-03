@@ -1,0 +1,84 @@
+[33mcommit 765523d268b2fb89ddcef02db03d83d79b86c9ef[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/revert[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: adb6bf5 05d38a5
+Author: Jessica Marques <jessica.marques.dev@gmail.com>
+Date:   Thu Apr 3 09:55:07 2025 -0300
+
+    Merge branches 'main' and 'main' of github.com:pixel-hub-org/pixel-hub-backend
+
+[33mcommit adb6bf5cc2c97cdfba80f1958893e2bc765ce777[m
+Author: Jessica Marques <jessica.marques.dev@gmail.com>
+Date:   Thu Apr 3 09:49:18 2025 -0300
+
+    revert
+
+[33mcommit 05d38a5c6fd7f863c6dbb27e0f7d1f0b179ce2e8[m
+Author: jessicaMarquess <jessica.marques.dev@gmail.com>
+Date:   Sun Mar 9 11:25:56 2025 -0300
+
+    feat: add vitest and configs
+
+[33mcommit 1a83fefb8fceaeac9deed552cde6e6c7f058395a[m
+Author: jessicaMarquess <jessica.marques.dev@gmail.com>
+Date:   Sun Mar 9 11:25:41 2025 -0300
+
+    feat: endpoints all games and create games
+
+[33mcommit d80570d0d920c0038245749e688f80efe581aeb5[m
+Author: jessicaMarquess <jessica.marques.dev@gmail.com>
+Date:   Wed Mar 5 10:01:40 2025 -0300
+
+    endpoint create team and refact
+
+[33mcommit 636b3e392de2fbe8e90dbb8fc0c8db696df4f357[m
+Author: jessicaMarquess <jessica.marques.dev@gmail.com>
+Date:   Thu Feb 27 20:23:57 2025 -0300
+
+    add useGuard
+
+[33mcommit befc9447bad68350d87be348cbb9da72e1eefab9[m
+Author: jessicaMarquess <jessica.marques.dev@gmail.com>
+Date:   Tue Feb 25 20:46:25 2025 -0300
+
+    feat: auth module + authenticate jwt
+
+[33mcommit 65bb22623f9845a6025479ceef687f29b37340ad[m
+Author: jessicaMarquess <jessica.marques.dev@gmail.com>
+Date:   Tue Feb 25 20:10:18 2025 -0300
+
+    feat: add config module
+
+[33mcommit 62f363b4314b424964a1b2acb3f118fab8d13ef5[m
+Author: jessicaMarquess <jessica.marques.dev@gmail.com>
+Date:   Tue Feb 25 19:57:11 2025 -0300
+
+    feat: add client rest file
+
+[33mcommit 138560d42edf85f46b66d2d4ae3873e8d6979990[m
+Author: jessicaMarquess <jessica.marques.dev@gmail.com>
+Date:   Mon Feb 24 20:34:21 2025 -0300
+
+    feat: add validation zod pipe
+
+[33mcommit 850ac673e9696faeaf847bf10977210d687ed549[m
+Author: jessicaMarquess <jessica.marques.dev@gmail.com>
+Date:   Sun Feb 23 21:20:20 2025 -0300
+
+    add prisma and first controller
+
+[33mcommit 94b842ee7a7c9af1a827bb70a611f5b51ad9bca1[m
+Author: jessicaMarquess <jessica.marques.dev@gmail.com>
+Date:   Sun Feb 23 21:19:56 2025 -0300
+
+    configs
+
+[33mcommit 9d7f32b57c9c40003300261e4c5a604dbb371761[m
+Author: jessicaMarquess <jessica.marques.dev@gmail.com>
+Date:   Sun Feb 23 21:19:00 2025 -0300
+
+    config docker postgres
+
+[33mcommit e24b42a26b4afda8915a3da91326a941197d7764[m
+Author: jessicaMarquess <jessica.marques.dev@gmail.com>
+Date:   Sat Feb 22 19:39:24 2025 -0300
+
+    first commit
