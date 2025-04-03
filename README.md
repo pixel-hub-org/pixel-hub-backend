@@ -1,8 +1,7 @@
 ## Pixel Hub - Backend
 
 ### Pré-requisitos
-Docker e Docker Compose instalados na sua máquina
-Git (para clonar o repositório)
+- Docker e Docker Compose instalados na sua máquina
 
 ### Configuração inicial
 Certifique-se de que o arquivo .env existe na raiz do projeto com as configurações de conexão ao banco de dados:
